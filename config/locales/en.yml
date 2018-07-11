@@ -17,7 +17,7 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
-      credit_html: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
+      credit_html: "<a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
       by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
     application:
       page_title: "Ruby on Rails Tutorial sample App"
@@ -31,11 +31,28 @@ en:
       email: "Email"
       password: "Password"
       password_confirmation: "Password Confirmation"
-      signup-btn: "Create my account"
+      signup_btn: "Create my account"
     create:
       welcome: "Welcome to Sample App!"
     show:
       cannot_find_user: "Can not find this user."
+    edit:
+      edit: "Edit account"
+      edit_title: "Update your profile"
+      edit_btn: "Save changes"
+      change: "Change"
+    index:
+      user: "User"
+      all_users: "All users"
+      pls_log_in: "Please log in"
+    user:
+      sure: "You sure?"
+      delete: "Delete"
+    destroy:
+      delete_success: "Deleted successfully!"
+      delete_fail: "Delete fail!"
+    update:
+      update_success: "Updated successfully!"
 
   aciverecord:
     errors:
@@ -51,58 +68,6 @@ en:
               too_short: "Password too short"
             password_confirmation:
               confirmation: "Password does not match"
-
-  helpers:
-    label:
-      user:
-        name: "Name"
-        email: "Email"
-        password: "Password"
-        password_confirmation: "Password Confirmation"
-
-  shared:
-    error_messages:
-      message: "The form contains "
-      error: " errors"
-
-  shared:
-    error_messages:
-      message: "The form contains "
-      error: " errors"
-
-  helpers:
-    label:
-      user:
-        email: "Email"
-        password: "Password"
-        name: "Name"
-        email: "Email"
-        password: "Password"
-        password_confirmation: "Password confirmation"
-
-  shared:
-    error_messages:
-      message: "The form contains "
-      error: "error"
-
-  sessions:
-    new:
-      email: "Email"
-      password: "Password"
-      login: "Log in"
-      newuser: "New user?"
-      signup_html: "<a href='/signup'>Register</a>"
-    create:
-      login_fail: "Invalid email/password combination."
-    user:
-      label:
-        email: "Email"
-        password: "Password"
-
-  shared:
-    error_messages:
-      message: "The form contains "
-      error: " errors"
 
   helpers:
     label:
