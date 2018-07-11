@@ -2,6 +2,12 @@ vi:
   english: "Tiếng Anh"
   vietnamese: "Tiếng Việt"
 
+  invalid_activation_link: "Liên kết kích hoạt không hợp lệ"
+  acc_activated: "Tài khoản đã được kích hoạt!"
+  message: "Tài khoản của bạn chưa được kích hoạt. 
+    Vui lòng kiểm tra email để kích hoạt tài khoản."
+  email_not_found: "Không tìm thấy địa chỉ email"
+
   layouts:
     header:
       home: "Trang chủ"
@@ -18,9 +24,25 @@ vi:
       contact: "Liên lạc"
       news: "Tin tức"
       credit_html: "Hướng dẫn <a href='http://www.railstutorial.org/'>Ruby on Rails </a>
-      bởi <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+        bởi <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
     application:
       page_title: "Hướng dẫn Ruby on Rails"
+
+  will_paginate:
+    next_label: "Tiếp ❯"
+    previous_label: "❮ Trước"
+
+  microposts:
+    micropost:
+      ago: "trước."
+      delete: "Xóa"
+      you_sure: "Bạn có chắc chắn không?"
+    edit:
+      pwd_reset: "Khôi phục mật khẩu"
+    create:
+      micropost_created: "Micropost đã được tạo!"
+    destroy:
+      micropost_deleted: "Micropost đã được xóa!"
 
   users:
     news:
@@ -31,11 +53,39 @@ vi:
       email: "Email"
       password: "Mật khẩu"
       password_confirmation: "Xác nhận mật khẩu"
-      signup-btn: "Thiết lập tài khoản của tôi"
+      signup_btn: "Thiết lập tài khoản của tôi"
     create:
       welcome: "Chào mừng bạn đến với Sample App!"
+      please_check_mail: "Hãy kiểm tra hộp thư đến của bạn"
     show:
       cannot_find_user: "Không thể tìm thấy người dùng này."
+    edit:
+      edit: "Chỉnh sửa hồ sơ"
+      edit_title: "Cập nhật thông tin"
+      edit_btn: "Lưu thay đổi"
+      change: "Thay đổi"
+    index:
+      user: "Người dùng"
+      all_users: "Tất cả người dùng"
+      pls_log_in: "Vui lòng đăng nhập"
+    user:
+      sure: "Bạn có chắc chắn muốn xóa không?"
+      delete: "Xóa"
+    destroy:
+      delete_success: "Xóa người dùng thành công!"
+      delete_fail: "Xóa người dùng thất bại"
+    update:
+      update_success: "Cập nhật người dùng thành công!"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Hủy theo dõi"
+    following:
+      following: "Đang theo dõi"
+    followers:
+      follower: "Theo dõi"
+    show_follow:
+      view_profile: "Hồ sơ của tôi"
   
   aciverecord:
     errors:
@@ -64,7 +114,48 @@ vi:
     error_messages:
       message: "Form của bạn có "
       error: "lỗi"
-        
+    micropost_form:
+      post: "Đăng"
+      placeholder: "Bạn đang nghĩ gì vậy?"
+      alert_maximum_size: "Kích thước tệp tối đa là 5MB. Vui lòng chọn tệp có kích thước nhỏ hơn."
+    user_info:
+      view_my_profile: "Hồ sơ của tôi"
+      microposts: "Bài viết"
+    stats:
+      follower: "theo dõi"
+      following: "đang theo dõi"
+
+  following: "Đang theo dõi"
+  follower: "Theo dõi"
+
+  models:
+    micropost:
+      picture_size: "phải nhỏ hơn 5MB"
+
+  user_mailer:
+    account_activation:
+      activate: "Kích hoạt"
+      hi: "Xin chào"
+      welcome: "Chào mừng bạn đã đến với Sample App"
+      acc_activation: "Kích hoạt tài khoản"
+    password_reset:
+      password_reset: "Khôi phục mật khẩu"
+      param1: "Để reset mật khẩu, hãy click vào link bên dưới:"
+      param2: "Link này sẽ hết hạn trong vòng 2 tiếng.
+        Nếu bạn không yêu cầu reset mật khẩu, xin vui lòng bỏ qua email này
+        và password của bạn sẽ giữ nguyên như cũ."
+      pwd_reset: "Khôi phục mật khẩu"
+      password_reset_has_expired: "Khôi phục mật khẩu đã hết hạn"
+    edit:
+      update_password: "Cập nhật mật khẩu"
+      reset_password: "Khôi phục mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      password: "Mật khẩu"
+      cannot_find_user: "Không thể tìm thấy người dùng này."
+    update:
+      password_has_been_reset: "Mật khẩu đã được cập nhật"
+      cant_be_empty: "Không được để trống"
+  
   sessions:
     new:
       login: "Đăng nhập"
@@ -74,28 +165,12 @@ vi:
     create:
       login_fail: "Email hoặc mật khẩu không chính xác."
 
-  helpers:
-    label:
-      user:
-        name: "Tên"
-        email: "Email"
-        password: "Mật khẩu"
-        password_confirmation: "Nhập lại mật khẩu"
-  
-  shared:
-    error_messages:
-      message: "Form của bạn có "
-      error: "lỗi"
-        
-  sessions:
+  password_resets:
     new:
-      login: "Đăng nhập"
-      password: "Mật khẩu"
-      remember: "Nhớ tài khoản của tôi?"
-      newuser: "Thành viên mới?"
-      signup: "Đăng ký"
+      forgot_pwd: "Quên mật khẩu"
+      submit_btn: "Xác nhận"
     create:
-      login_fail: "Email hoặc mật khẩu không chính xác."
+      email_sent: "Đã gửi email"
 
   static_pages:
     home:
@@ -103,6 +178,7 @@ vi:
       home_detail_html: "Đây là trang chủ của ứng dụng mẫu <a href='http://www.railstutorial.org/'>
       Ruby on Rails Tutorial</a>."
       signup: "Đăng ký"
+      feed: "Dòng thời gian"
     help:
       help_title: "Trợ giúp"
       help_detail_html: "Nhận trợ giúp về Ruby on Rails <a href='http://www.railstutorial.org/help'>
