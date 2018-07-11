@@ -1,21 +1,42 @@
 en:
-  english: "English"
-  vietnamese: "Vietnamese"
+  english: "en"
+  vietnamese: "vi"
+
+  layouts:
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Login"
+    footer:
+      about: "About"
+      contact: "Contact"
+      news: "News"
+      credit_html: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
+      by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+    application:
+      page_title: "Ruby on Rails Tutorial sample App"
+
+  users:
+    new:
+      signup_title: "Sign up"
+      signup_detail: "This will be a signup page for new users."
+
   static_pages:
     home:
-      home_title: "Sample App"
+      home_title: "Welcome to the Sample App"
       home_detail_html: "This is the home page for the <a href='http://www.railstutorial.org/'>
       Ruby on Rails Tutorial</a> sample application."
+      signup: "Sign up now!"
     help:
       help_title: "Help"
       help_detail_html: "Get help on the Ruby on Rails Tutorial at the
       <a href='http://www.railstutorial.org/help'>Rails Tutorial help section</a>.
-      To get help on this sample app, see the <a href='http://www.railstutorial.org/book'><em>
-      Ruby on Rails Tutorial</em> book</a>."
+      To get help on this sample app, see the <a href='http://www.railstutorial.org/book'>
+      Ruby on Rails Tutorial book</a>."
     about:
       about_title: "About"
-      about_detail_html: "The <a href='http://www.railstutorial.org/'><em>
-      Ruby on Rails Tutorial</em></a> is a <a href='http://www.railstutorial.org/book'>book</a>
+      about_detail_html: "The <a href='http://www.railstutorial.org/'>
+      Ruby on Rails Tutorial</a> is a <a href='http://www.railstutorial.org/book'>book</a>
       and <a href='http://screencasts.railstutorial.org/'>screencast series</a>
       to teach web development with <a href='http://rubyonrails.org/'>Ruby on Rails</a>.
       This is the sample application for the tutorial."
