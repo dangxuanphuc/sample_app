@@ -64,6 +64,18 @@ en:
     next_label: "Next ❯"
     previous_label: "❮ Previous"
 
+  microposts:
+    micropost:
+      ago: "ago."
+      delete: "Delete"
+      you_sure: "You sure?"
+    edit:
+      pwd_reset: "Reset password"
+    create:
+      micropost_created: "Micropost created!"
+    destroy:
+      micropost_deleted: "Micropost deleted!"
+
   aciverecord:
     errors:
       models:
@@ -78,7 +90,7 @@ en:
               too_short: "Password too short"
             password_confirmation:
               confirmation: "Password does not match"
-
+        
   helpers:
     label:
       user:
@@ -91,6 +103,17 @@ en:
     error_messages:
       message: "The form contains "
       error: " errors"
+    micropost_form:
+      post: "Post"
+      placeholder: "What's on you mind?"
+      alert_maximum_size: "Maximum file size is 5MB. Please choose a smaller file."
+    user_info:
+      view_my_profile: "View my profile"
+      microposts: "microposts"
+
+  models:
+    micropost:
+      picture_size: "should be less than 5MB"
 
   user_mailer:
     account_activation:
