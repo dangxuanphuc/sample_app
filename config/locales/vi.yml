@@ -6,6 +6,7 @@ vi:
   acc_activated: "Tài khoản đã được kích hoạt!"
   message: "Tài khoản của bạn chưa được kích hoạt. 
     Vui lòng kiểm tra email để kích hoạt tài khoản."
+  email_not_found: "Không tìm thấy địa chỉ email"
 
   layouts:
     header:
@@ -98,16 +99,39 @@ vi:
       hi: "Xin chào"
       welcome: "Chào mừng bạn đã đến với Sample App"
       acc_activation: "Kích hoạt tài khoản"
+    password_reset:
+      password_reset: "Khôi phục mật khẩu"
+      param1: "Để reset mật khẩu, hãy click vào link bên dưới:"
+      param2: "Link này sẽ hết hạn trong vòng 2 tiếng.
+        Nếu bạn không yêu cầu reset mật khẩu, xin vui lòng bỏ qua email này
+        và password của bạn sẽ giữ nguyên như cũ."
+      pwd_reset: "Khôi phục mật khẩu"
+      password_reset_has_expired: "Khôi phục mật khẩu đã hết hạn"
+    edit:
+      update_password: "Cập nhật mật khẩu"
+      reset_password: "Khôi phục mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      password: "Mật khẩu"
+      cannot_find_user: "Không thể tìm thấy người dùng này."
+    update:
+      password_has_been_reset: "Mật khẩu đã được cập nhật"
+      cant_be_empty: "Không được để trống"
   
   sessions:
     new:
       login: "Đăng nhập"
       password: "Mật khẩu"
-      remember: "Nhớ tài khoản của tôi?"
       newuser: "Thành viên mới?"
-      signup: "Đăng ký"
+      signup: "Đăng ký ngay"
     create:
       login_fail: "Email hoặc mật khẩu không chính xác."
+
+  password_resets:
+    new:
+      forgot_pwd: "Quên mật khẩu"
+      submit_btn: "Xác nhận"
+    create:
+      email_sent: "Đã gửi email"
 
   static_pages:
     home:

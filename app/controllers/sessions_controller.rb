@@ -9,9 +9,7 @@ class SessionsController < ApplicationController
         remember_user
         redirect_back_or @user
       else
-        message = t ".message"
-        flash[:warning] = message
-        redirect_to root_url
+        not_activated_message
       end
     else
       flash.now[:danger] = t ".login_fail"
@@ -25,7 +23,14 @@ class SessionsController < ApplicationController
   end
 
   private
+
   def remember_user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+  end
+
+  def not_activated_message
+    message = t ".message"
+    flash[:warning] = message
+    redirect_to root_url
   end
 end
