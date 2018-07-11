@@ -99,6 +99,41 @@ en:
         email: "Email"
         password: "Password"
 
+  shared:
+    error_messages:
+      message: "The form contains "
+      error: " errors"
+
+  helpers:
+    label:
+      user:
+        email: "Email"
+        password: "Password"
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+
+  shared:
+    error_messages:
+      message: "The form contains "
+      error: "error"
+
+  sessions:
+    new:
+      email: "Email"
+      password: "Password"
+      login: "Log in"
+      remember: "Remember me"
+      newuser: "New user?"
+      signup: "Register"
+    create:
+      login_fail: "Invalid email/password combination."
+    user:
+      label:
+        email: "Email"
+        password: "Password"
+
   static_pages:
     home:
       home_title: "Welcome to the Sample App"
