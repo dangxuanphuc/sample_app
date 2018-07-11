@@ -17,7 +17,7 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
-      credit_html: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
+      credit_html: "<a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
       by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
     application:
       page_title: "Ruby on Rails Tutorial sample App"
@@ -31,11 +31,28 @@ en:
       email: "Email"
       password: "Password"
       password_confirmation: "Password Confirmation"
-      signup-btn: "Create my account"
+      signup_btn: "Create my account"
     create:
       welcome: "Welcome to Sample App!"
     show:
       cannot_find_user: "Can not find this user."
+    edit:
+      edit: "Edit account"
+      edit_title: "Update your profile"
+      edit_btn: "Save changes"
+      change: "Change"
+    index:
+      user: "User"
+      all_users: "All users"
+      pls_log_in: "Please log in"
+    user:
+      sure: "You sure?"
+      delete: "Delete"
+    destroy:
+      delete_success: "Deleted successfully!"
+      delete_fail: "Delete fail!"
+    update:
+      update_success: "Updated successfully!"
 
   aciverecord:
     errors:
