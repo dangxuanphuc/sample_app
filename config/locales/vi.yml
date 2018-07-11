@@ -2,6 +2,11 @@ vi:
   english: "Tiếng Anh"
   vietnamese: "Tiếng Việt"
 
+  invalid_activation_link: "Liên kết kích hoạt không hợp lệ"
+  acc_activated: "Tài khoản đã được kích hoạt!"
+  message: "Tài khoản của bạn chưa được kích hoạt. 
+    Vui lòng kiểm tra email để kích hoạt tài khoản."
+
   layouts:
     header:
       home: "Trang chủ"
@@ -18,9 +23,13 @@ vi:
       contact: "Liên lạc"
       news: "Tin tức"
       credit_html: "Hướng dẫn <a href='http://www.railstutorial.org/'>Ruby on Rails </a>
-      bởi <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+        bởi <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
     application:
       page_title: "Hướng dẫn Ruby on Rails"
+
+  will_paginate:
+    next_label: "Tiếp ❯"
+    previous_label: "❮ Trước"
 
   users:
     news:
@@ -31,11 +40,29 @@ vi:
       email: "Email"
       password: "Mật khẩu"
       password_confirmation: "Xác nhận mật khẩu"
-      signup-btn: "Thiết lập tài khoản của tôi"
+      signup_btn: "Thiết lập tài khoản của tôi"
     create:
       welcome: "Chào mừng bạn đến với Sample App!"
+      please_check_mail: "Hãy kiểm tra hộp thư đến của bạn"
     show:
       cannot_find_user: "Không thể tìm thấy người dùng này."
+    edit:
+      edit: "Chỉnh sửa hồ sơ"
+      edit_title: "Cập nhật thông tin"
+      edit_btn: "Lưu thay đổi"
+      change: "Thay đổi"
+    index:
+      user: "Người dùng"
+      all_users: "Tất cả người dùng"
+      pls_log_in: "Vui lòng đăng nhập"
+    user:
+      sure: "Bạn có chắc chắn muốn xóa không?"
+      delete: "Xóa"
+    destroy:
+      delete_success: "Xóa người dùng thành công!"
+      delete_fail: "Xóa người dùng thất bại"
+    update:
+      update_success: "Cập nhật người dùng thành công!"
   
   aciverecord:
     errors:
@@ -65,6 +92,13 @@ vi:
       message: "Form của bạn có "
       error: "lỗi"
         
+  user_mailer:
+    account_activation:
+      activate: "Kích hoạt"
+      hi: "Xin chào"
+      welcome: "Chào mừng bạn đã đến với Sample App"
+      acc_activation: "Kích hoạt tài khoản"
+  
   sessions:
     new:
       login: "Đăng nhập"
