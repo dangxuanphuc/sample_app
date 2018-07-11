@@ -1,6 +1,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'colors';
+
 body {
   padding-top: 60px;
 }
@@ -35,6 +36,7 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
 }
+
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
@@ -48,6 +50,7 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
+
 #logo {
   float: left;
   margin-right: 10px;
