@@ -1,4 +1,4 @@
-require_relative "boot"
+require_relative 'boot'
 
 require "rails"
 # Pick the frameworks you want:
@@ -27,7 +27,8 @@ module SampleApp
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    # Don't generate system test files.
+    config.i18n.default_locale = :en
+    config.i18n.available_locales = [:en, :vi]
     config.generators.system_tests = nil
   end
 end

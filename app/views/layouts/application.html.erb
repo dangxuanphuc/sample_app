@@ -2,14 +2,17 @@
 <html>
   <head>
     <title>SampleApp</title>
+    <title><%= yield :title %> | Ruby on Rails Tutorial Sample App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <%= stylesheet_link_tag "application", media: "all", "dataturbolinkstrack": "reload" %>
+    <%= javascript_include_tag "application", "dataturbolinkstrack": "reload" %>
+   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+   <body>
+     <%= yield %>
+     <%= link_to t(:english), locale:"en" %>
+     <%= link_to t(:vietnamese), locale:"vi" %>
+   </body>
 </html>
