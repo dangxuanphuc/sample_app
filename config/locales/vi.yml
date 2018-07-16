@@ -1,19 +1,40 @@
 vi:
-  english: "Tiếng anh"
-  vietnamese: "Tiếng Việt"
+  english: "en"
+  vietnamese: "vi"
+
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+    footer:
+      about: "Giới thiệu"
+      contact: "Liên lạc"
+      news: "Tin tức"
+      credit_html: "Hướng dẫn <a href='http://www.railstutorial.org/'>Ruby on Rails </a> 
+      bởi <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+    application:
+      page_title: "Hướng dẫn Ruby on Rails"
+
+  users:
+    new:
+      signup_title: "Đăng ký"
+      signup_detail: "Đây là trang đăng ký của người dùng mới."
+
   static_pages:
     home:
-      home_title: "Trang chủ"
+      home_title: "Chào mừng đến với trang chủ"
       home_detail_html: "Đây là trang chủ của ứng dụng mẫu <a href='http://www.railstutorial.org/'>
       Ruby on Rails Tutorial</a>."
+      signup: "Đăng ký"
     help:
       help_title: "Trợ giúp"
       help_detail_html: "Nhận trợ giúp về Ruby on Rails <a href='http://www.railstutorial.org/help'>
       phần trợ giúp Rails</a>. Để nhận sự trợ giúp về ứng dụng mẫu, xem cuốn
-      <a href='http://www.railstutorial.org/book'><em> Ruby on Rails Tutorial.</em></a>"
+      <a href='http://www.railstutorial.org/book'> Ruby on Rails Tutorial.</a>"
     about:
       about_title: "Giới thiệu"
-      about_detail_html: "<a href='http://www.railstutorial.org/'><em>Hướng dẫn Ruby on Rails </em></a>
+      about_detail_html: "<a href='http://www.railstutorial.org/'>Hướng dẫn Ruby on Rails </a>
       là một <a href='http://www.railstutorial.org/book'>cuốn sách </a> và
       <a href='http://screencasts.railstutorial.org/'>loạt bài hướng dẫn </a> về lập trình
       <a href='http://rubyonrails.org/'>Ruby on Rails</a>. Đây là hướng dẫn làm một ứng dụng mẫu."
