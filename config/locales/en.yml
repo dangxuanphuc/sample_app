@@ -17,9 +17,47 @@ en:
       page_title: "Ruby on Rails Tutorial sample App"
 
   users:
+    news:
+      signup: "Sign up"
     new:
-      signup_title: "Sign up"
-      signup_detail: "This will be a signup page for new users."
+      signup: "Sign up"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+      signup-btn: "Create my account"
+    create:
+      welcome: "Welcome to Sample App!"
+    show:
+      cannot_find_user: "Can not find this user."
+
+  aciverecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "Name can't be blank"
+            email:
+              blank: "Email can't be blank"
+            password:
+              blank: "Password can't be blank"
+              too_short: "Password too short"
+            password_confirmation:
+              confirmation: "Password does not match"
+
+  helpers:
+    label:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password Confirmation"
+
+  shared:
+    error_messages:
+      message: "The form contains "
+      error: " errors"
 
   static_pages:
     home:
