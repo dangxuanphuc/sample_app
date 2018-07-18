@@ -1,12 +1,18 @@
 en:
-  english: "en"
-  vietnamese: "vi"
+  english: "English"
+  vietnamese: "Vietnamese"
 
   layouts:
     header:
       home: "Home"
       help: "Help"
       login: "Login"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
+      language: "Language"
     footer:
       about: "About"
       contact: "Contact"
@@ -58,6 +64,40 @@ en:
     error_messages:
       message: "The form contains "
       error: " errors"
+
+  shared:
+    error_messages:
+      message: "The form contains "
+      error: " errors"
+
+  helpers:
+    label:
+      user:
+        email: "Email"
+        password: "Password"
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+
+  shared:
+    error_messages:
+      message: "The form contains "
+      error: "error"
+
+  sessions:
+    new:
+      email: "Email"
+      password: "Password"
+      login: "Log in"
+      newuser: "New user?"
+      signup_html: "<a href='/signup'>Register</a>"
+    create:
+      login_fail: "Invalid email/password combination."
+    user:
+      label:
+        email: "Email"
+        password: "Password"
 
   static_pages:
     home:
