@@ -9,7 +9,7 @@ vi:
       login: "Đăng nhập"
       users: "Người dùng"
       account: "Tài khoản"
-      profile: "Trang cá nhân"
+      profile: "Hồ sơ"
       settings: "Cài đặt"
       logout: "Đăng xuất"
       language: "Ngôn ngữ"
@@ -71,6 +71,29 @@ vi:
       password: "Mật khẩu"
       newuser: "Thành viên mới?"
       signup: "Đăng ký ngay"
+    create:
+      login_fail: "Email hoặc mật khẩu không chính xác."
+
+  helpers:
+    label:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Nhập lại mật khẩu"
+  
+  shared:
+    error_messages:
+      message: "Form của bạn có "
+      error: "lỗi"
+        
+  sessions:
+    new:
+      login: "Đăng nhập"
+      password: "Mật khẩu"
+      remember: "Nhớ tài khoản của tôi?"
+      newuser: "Thành viên mới?"
+      signup: "Đăng ký"
     create:
       login_fail: "Email hoặc mật khẩu không chính xác."
 
