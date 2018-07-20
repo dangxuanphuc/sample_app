@@ -22,6 +22,14 @@ vi:
     application:
       page_title: "Hướng dẫn Ruby on Rails"
 
+  views:
+    pagination:
+      first: "« Đầu tiên"
+      last: "Cuối cùng »"
+      previous: "‹ Trước"
+      next: "Tiếp ›"
+      truncate: "…"
+
   users:
     news:
       signup: "Đăng ký"
@@ -31,11 +39,28 @@ vi:
       email: "Email"
       password: "Mật khẩu"
       password_confirmation: "Xác nhận mật khẩu"
-      signup-btn: "Thiết lập tài khoản của tôi"
+      signup_btn: "Thiết lập tài khoản của tôi"
     create:
       welcome: "Chào mừng bạn đến với Sample App!"
     show:
       cannot_find_user: "Không thể tìm thấy người dùng này."
+    edit:
+      edit: "Chỉnh sửa hồ sơ"
+      edit_title: "Cập nhật thông tin"
+      edit_btn: "Lưu thay đổi"
+      change: "Thay đổi"
+    index:
+      user: "Người dùng"
+      all_users: "Tất cả người dùng"
+      pls_log_in: "Vui lòng đăng nhập"
+    user:
+      sure: "Bạn có chắc chắn muốn xóa không?"
+      delete: "Xóa"
+    destroy:
+      delete_success: "Xóa người dùng thành công!"
+      delete_fail: "Xóa người dùng thất bại"
+    update:
+      update_success: "Cập nhật người dùng thành công!"
   
   aciverecord:
     errors:
@@ -51,28 +76,6 @@ vi:
               too_short: "Mật khẩu quá ngắn"
             password_confirmation:
               confirmation: "Mật khẩu không trùng khớp"
-
-  helpers:
-    label:
-      user:
-        name: "Tên"
-        email: "Email"
-        password: "Mật khẩu"
-        password_confirmation: "Nhập lại mật khẩu"
-  
-  shared:
-    error_messages:
-      message: "Form của bạn có "
-      error: "lỗi"
-        
-  sessions:
-    new:
-      login: "Đăng nhập"
-      password: "Mật khẩu"
-      newuser: "Thành viên mới?"
-      signup: "Đăng ký ngay"
-    create:
-      login_fail: "Email hoặc mật khẩu không chính xác."
 
   helpers:
     label:

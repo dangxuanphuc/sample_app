@@ -2,11 +2,11 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    @user = User.find_by email: params[:session][:email].downcase
-    if @user&.authenticate params[:session][:password]
-      log_in @user
+    user = User.find_by email: params[:session][:email].downcase
+    if user&.authenticate params[:session][:password]
+      log_in user
       remember_user
-      redirect_to @user
+      redirect_back_or user
     else
       flash.now[:danger] = t ".login_fail"
       render :new
@@ -20,6 +20,6 @@ class SessionsController < ApplicationController
 
   private
   def remember_user
-    params[:session][:remember_me] == "1" ? remember(@user) : forget(@user)
+    params[:session][:remember_me] == "1" ? remember(user) : forget(user)
   end
 end
