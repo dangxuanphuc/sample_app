@@ -5,6 +5,7 @@ en:
   invalid_activation_link: "Invalid activation link"
   acc_activated: "Account activated!"
   acc_not_activate: "Account not activated. Check your email for the activation link."
+  email_not_found: "Email address not found"
 
   layouts:
     header:
@@ -81,17 +82,39 @@ en:
   helpers:
     label:
       user:
-        email: "Email"
-        password: "Password"
         name: "Name"
         email: "Email"
         password: "Password"
-        password_confirmation: "Password confirmation"
+        password_confirmation: "Password Confirmation"
 
   shared:
     error_messages:
       message: "The form contains "
-      error: "error"
+      error: " errors"
+
+  user_mailer:
+    account_activation:
+      activate: "Activation"
+      hi: "Hi"
+      welcome: "Welcome to Sample App"
+      acc_activation: "Account activation"
+    password_reset:
+      password_reset: "Password reset"
+      param1: "To reset your password click the link below:"
+      param2: "This link will expire in two hours.
+        If you did not request your password to be reset, please ignore this email and
+        your password will stay as it is."
+      pwd_reset: "Reset password"
+      password_reset_has_expired: "Password reset has expired"
+    edit:
+      update_password: "Cập nhật mật khẩu"
+      reset_password: "Khôi phục mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      password: "Mật khẩu"
+      cannot_find_user: "Can not find this user."
+    update:
+      password_has_been_reset: "Mật khẩu đã được cập nhật"
+      cant_be_empty: "Can't be empty"
 
   sessions:
     new:
@@ -106,6 +129,13 @@ en:
       label:
         email: "Email"
         password: "Password"
+
+  password_resets:
+    new:
+      forgot_pwd: "Forgot password"
+      submit_btn: "Submit"
+    create:
+      email_sent: "Email sent with password reset instructions"
 
   static_pages:
     home:
