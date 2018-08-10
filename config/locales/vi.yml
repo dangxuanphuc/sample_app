@@ -103,28 +103,6 @@ vi:
     new:
       login: "Đăng nhập"
       password: "Mật khẩu"
-      newuser: "Thành viên mới?"
-      signup: "Đăng ký ngay"
-    create:
-      login_fail: "Email hoặc mật khẩu không chính xác."
-
-  helpers:
-    label:
-      user:
-        name: "Tên"
-        email: "Email"
-        password: "Mật khẩu"
-        password_confirmation: "Nhập lại mật khẩu"
-  
-  shared:
-    error_messages:
-      message: "Form của bạn có "
-      error: "lỗi"
-        
-  sessions:
-    new:
-      login: "Đăng nhập"
-      password: "Mật khẩu"
       remember: "Nhớ tài khoản của tôi?"
       newuser: "Thành viên mới?"
       signup: "Đăng ký"
