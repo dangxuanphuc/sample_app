@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, only: %i(index edit update destroy)
-  before_action :find_user, only: %i(show edit update destroy)
+  before_action :find_user, only: %i(show edit update destroy following followers)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
 
@@ -24,8 +24,12 @@ class UsersController < ApplicationController
   end
 
   def show
+    @create_relationship = current_user.active_relationships.build
+    @destroy_relationship = current_user.active_relationships
+      .find_by followed_id: @user.id
     @microposts = @user.microposts.paginate(page: params[:page])
-                       .per_page Settings.paginate_per
+      .per_page Settings.paginate_per
+    redirect_to root_url and return unless user.activated == true
   end
 
   def edit; end
@@ -49,6 +53,8 @@ class UsersController < ApplicationController
   end
 
   private
+
+  attr_reader :user
 
   def user_params
     params.require(:user).permit :name, :email, :password,

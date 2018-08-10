@@ -39,4 +39,10 @@ class SessionsController < ApplicationController
     flash[:warning] = message
     redirect_to root_url
   end
+
+  def not_activated_message
+    message = t ".message"
+    flash[:warning] = message
+    redirect_to root_url
+  end
 end

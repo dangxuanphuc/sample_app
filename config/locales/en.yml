@@ -59,6 +59,16 @@ en:
       delete_fail: "Delete fail!"
     update:
       update_success: "Updated successfully!"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    following:
+      following: "Following"
+    followers:
+      follower: "Followers"
+    show_follow: 
+      view_profile: "View my profile"
 
   will_paginate:
     next_label: "Next ❯"
@@ -110,6 +120,12 @@ en:
     user_info:
       view_my_profile: "View my profile"
       microposts: "microposts"
+    stats:
+      follower: "follower"
+      following: "following"
+
+  following: "Following"
+  followers: "Followers"
 
   models:
     micropost:
@@ -166,6 +182,7 @@ en:
       home_detail_html: "This is the home page for the <a href='http://www.railstutorial.org/'>
       Ruby on Rails Tutorial</a> sample application."
       signup: "Sign up now!"
+      feed: "Micropost feed"
     help:
       help_title: "Help"
       help_detail_html: "Get help on the Ruby on Rails Tutorial at the

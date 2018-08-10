@@ -10,3 +10,4 @@ micropost_gravatar_size: 50
 picture_size: 5
 size_byte: 1024
 picture_size_limit: 400
+gravatar_size_follow: 30

@@ -76,6 +76,16 @@ vi:
       delete_fail: "Xóa người dùng thất bại"
     update:
       update_success: "Cập nhật người dùng thành công!"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Hủy theo dõi"
+    following:
+      following: "Đang theo dõi"
+    followers:
+      follower: "Theo dõi"
+    show_follow:
+      view_profile: "Hồ sơ của tôi"
   
   aciverecord:
     errors:
@@ -110,7 +120,13 @@ vi:
       alert_maximum_size: "Kích thước tệp tối đa là 5MB. Vui lòng chọn tệp có kích thước nhỏ hơn."
     user_info:
       view_my_profile: "Hồ sơ của tôi"
-      microposts: "bài viết"
+      microposts: "Bài viết"
+    stats:
+      follower: "theo dõi"
+      following: "đang theo dõi"
+
+  following: "Đang theo dõi"
+  follower: "Theo dõi"
 
   models:
     micropost:
@@ -162,6 +178,7 @@ vi:
       home_detail_html: "Đây là trang chủ của ứng dụng mẫu <a href='http://www.railstutorial.org/'>
       Ruby on Rails Tutorial</a>."
       signup: "Đăng ký"
+      feed: "Dòng thời gian"
     help:
       help_title: "Trợ giúp"
       help_detail_html: "Nhận trợ giúp về Ruby on Rails <a href='http://www.railstutorial.org/help'>
