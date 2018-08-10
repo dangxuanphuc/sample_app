@@ -2,6 +2,11 @@ vi:
   english: "Tiếng Anh"
   vietnamese: "Tiếng Việt"
 
+  invalid_activation_link: "Liên kết kích hoạt không hợp lệ"
+  acc_activated: "Tài khoản đã được kích hoạt!"
+  message: "Tài khoản của bạn chưa được kích hoạt. 
+    Vui lòng kiểm tra email để kích hoạt tài khoản."
+
   layouts:
     header:
       home: "Trang chủ"
@@ -18,17 +23,13 @@ vi:
       contact: "Liên lạc"
       news: "Tin tức"
       credit_html: "Hướng dẫn <a href='http://www.railstutorial.org/'>Ruby on Rails </a>
-      bởi <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+        bởi <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
     application:
       page_title: "Hướng dẫn Ruby on Rails"
 
-  views:
-    pagination:
-      first: "« Đầu tiên"
-      last: "Cuối cùng »"
-      previous: "‹ Trước"
-      next: "Tiếp ›"
-      truncate: "…"
+  will_paginate:
+    next_label: "Tiếp ❯"
+    previous_label: "❮ Trước"
 
   users:
     news:
@@ -42,6 +43,7 @@ vi:
       signup_btn: "Thiết lập tài khoản của tôi"
     create:
       welcome: "Chào mừng bạn đến với Sample App!"
+      please_check_mail: "Hãy kiểm tra hộp thư đến của bạn"
     show:
       cannot_find_user: "Không thể tìm thấy người dùng này."
     edit:
@@ -90,6 +92,13 @@ vi:
       message: "Form của bạn có "
       error: "lỗi"
         
+  user_mailer:
+    account_activation:
+      activate: "Kích hoạt"
+      hi: "Xin chào"
+      welcome: "Chào mừng bạn đã đến với Sample App"
+      acc_activation: "Kích hoạt tài khoản"
+  
   sessions:
     new:
       login: "Đăng nhập"

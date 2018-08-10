@@ -2,6 +2,10 @@ en:
   english: "English"
   vietnamese: "Vietnamese"
 
+  invalid_activation_link: "Invalid activation link"
+  acc_activated: "Account activated!"
+  acc_not_activate: "Account not activated. Check your email for the activation link."
+
   layouts:
     header:
       home: "Home"
@@ -34,6 +38,7 @@ en:
       signup_btn: "Create my account"
     create:
       welcome: "Welcome to Sample App!"
+      please_check_mail: "Please check your email to activate your account"
     show:
       cannot_find_user: "Can not find this user."
     edit:
@@ -53,6 +58,10 @@ en:
       delete_fail: "Delete fail!"
     update:
       update_success: "Updated successfully!"
+
+  will_paginate:
+    next_label: "Next ❯"
+    previous_label: "❮ Previous"
 
   aciverecord:
     errors:
