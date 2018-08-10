@@ -4,6 +4,8 @@ class User < ApplicationRecord
   attr_reader :remember_token
   attr_accessor :activation_token, :reset_token
 
+  has_many :microposts, dependent: :destroy
+
   before_save :email_downcase
   before_create :create_activation_digest
 
@@ -72,6 +74,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.hours_max.hours.ago
+  end
+
+  def feed
+    Micropost.where("user_id = ?", id)
   end
 
   private

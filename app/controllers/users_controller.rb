@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
-  before_action :find_user, only: [:show, :edit, :update, :destroy]
-  before_action :correct_user, only: [:edit, :update]
-  before_action :admin_user, only: :destroy
+  before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :find_user, only: %i(show edit update destroy)
+  before_action :correct_user, only: %i(edit update)
+  before_action :admin_user, only: %i(destroy)
 
   def new
     @user = User.new
@@ -23,7 +23,10 @@ class UsersController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate(page: params[:page])
+                       .per_page Settings.paginate_per
+  end
 
   def edit; end
 
@@ -58,13 +61,6 @@ class UsersController < ApplicationController
     return if @user
     flash[:danger] = t ".cannot_find_user"
     redirect_to root_url
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t ".pls_log_in"
-    redirect_to login_path
   end
 
   def correct_user

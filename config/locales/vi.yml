@@ -32,6 +32,18 @@ vi:
     next_label: "Tiếp ❯"
     previous_label: "❮ Trước"
 
+  microposts:
+    micropost:
+      ago: "trước."
+      delete: "Xóa"
+      you_sure: "Bạn có chắc chắn không?"
+    edit:
+      pwd_reset: "Khôi phục mật khẩu"
+    create:
+      micropost_created: "Micropost đã được tạo!"
+    destroy:
+      micropost_deleted: "Micropost đã được xóa!"
+
   users:
     news:
       signup: "Đăng ký"
@@ -92,7 +104,18 @@ vi:
     error_messages:
       message: "Form của bạn có "
       error: "lỗi"
-        
+    micropost_form:
+      post: "Đăng"
+      placeholder: "Bạn đang nghĩ gì vậy?"
+      alert_maximum_size: "Kích thước tệp tối đa là 5MB. Vui lòng chọn tệp có kích thước nhỏ hơn."
+    user_info:
+      view_my_profile: "Hồ sơ của tôi"
+      microposts: "bài viết"
+
+  models:
+    micropost:
+      picture_size: "phải nhỏ hơn 5MB"
+
   user_mailer:
     account_activation:
       activate: "Kích hoạt"
