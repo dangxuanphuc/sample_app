@@ -25,7 +25,19 @@ class SessionsController < ApplicationController
   private
 
   def remember_user
-    params[:session][:remember_me] == "1" ? remember(@user) : forget(@user)
+    params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+  end
+
+  def not_activated_message
+    message = t ".message"
+    flash[:warning] = message
+    redirect_to root_url
+  end
+
+  def not_activated_message
+    message = t ".message"
+    flash[:warning] = message
+    redirect_to root_url
   end
 
   def not_activated_message
